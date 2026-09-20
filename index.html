@@ -95,50 +95,107 @@
         DOG
       </div>
       <div class="col bg-info-subtle">
-        <h4 class="mt-4">register</h4>
+  <h4 class="mt-4">Register</h4>
 
-        <form class="text-start">
-          <div class="mb-3">
-            <label class="form-label">Firstname</label>
-            <input type="text" class="form-control" id="firstname" required placeholder="input firstname">
-            <div class="mb-3">
-              <label class="form-label">Lastname</label>
-              <input type="text" class="form-control" id="lastname" required placeholder="input lastname">
-              <div class="mb-3">
-                <label class="form-label">Telephone</label>
-                <input type="tel" class="form-control" id="telephone" required placeholder="ex xxx-xxx-xxxx">
-                <div class="mb-3">
-                  <label class="form-label">Province</label>
-                  <select class="form-select" aria-label="Default select example" required>
-                    <option selected>เลือกจังหวัด</option>
-                    <option value="1">ชลบุรี</option>
-                    <option value="2">ระยอง</option>
-                    <option value="3">เชียงใหม่</option>
-                  </select>
-
-                  <div class="mb-3">
-                    <label class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" required placeholder="input email address">
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" id="pw" required placeholder="input password">
-                  </div>
-                  <div class="text-center">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Cancel</button>
-                  </div>
-        </form>
-      </div>
+  <form class="text-start">
+    <div class="mb-3">
+      <label for="firstname" class="form-label">Firstname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        required
+        placeholder="Input firstname"
+      >
     </div>
-  </div>
-  <div class="container">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/menu.js"></script>
-</body>
 
+    <div class="mb-3">
+      <label for="lastname" class="form-label">Lastname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        required
+        placeholder="Input lastname"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="telephone" class="form-label">Telephone</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="telephone"
+        required
+        placeholder="ex xxx-xxx-xxxx"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="province" class="form-label">Province</label>
+      <select
+        class="form-select"
+        id="province"
+        required
+      >
+        <option value="" selected disabled>เลือกจังหวัด</option>
+        <option value="1">ชลบุรี</option>
+        <option value="2">ระยอง</option>
+        <option value="3">เชียงใหม่</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        required
+        placeholder="Input email address"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="pw" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="pw"
+        required
+        placeholder="Input password"
+      >
+    </div>
+
+    <div class="text-center mb-3">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="exampleCheck1"
+      >
+      <label class="form-check-label" for="exampleCheck1">
+        Check me out
+      </label>
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">
+        Submit
+      </button>
+
+      <button type="reset" class="btn btn-secondary">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
+
+<div id="footer"></div>
+
+<div class="container">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/menu.js"></script>
+</div>
+
+</body>
 </html>
